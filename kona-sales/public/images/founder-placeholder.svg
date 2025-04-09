@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="99" fill="#1E293B" stroke="#4A90E2" stroke-width="2"/>
+  <circle cx="100" cy="80" r="30" fill="#334155"/>
+  <path d="M50 170C50 137.91 72.91 115 105 115C137.09 115 160 137.91 160 170" stroke="#334155" stroke-width="20"/>
+  <text x="100" y="180" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Founder Image</text>
+  <text x="100" y="200" font-family="Arial" font-size="12" fill="#4A90E2" text-anchor="middle">Coming Soon</text>
+</svg>
