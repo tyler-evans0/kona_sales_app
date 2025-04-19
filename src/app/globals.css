@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom fonts for Lotus Sales */
+@font-face {
+  font-family: 'Poppins';
+  src: url('https://ext.same-assets.com/2095582637/3461392067.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;  /* Changed to black */
+    --foreground: 0 0% 100%;  /* Changed to white */
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;  /* White */
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 326 3% 39%;  /* #695e62 */
+    --muted-foreground: 240 4% 70%;
+    --accent: 16 30% 44%;  /* #93644f */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 80%;
+    --radius: 0.5rem;
+    --lotus-dark-purple: 256 15% 21%;  /* #312d3c */
+    --lotus-teal: 172 9% 57%;  /* #7c908e */
+    --lotus-blue-gray: 220 8% 51%;  /* #76778d */
+    --lotus-blue: 234 24% 29%;  /* #36385c */
+    --lotus-slate: 210 29% 33%;  /* #3c5369 */
+  }
+
+  .dark {
+    --background: 0 0% 0%;  /* Black */
+    --foreground: 0 0% 100%;  /* White */
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 16 30% 44%;  /* #93644f */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 80%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium tracking-tight;
+  }
+}
+
+@layer components {
+  .lotus-button {
+    @apply px-6 py-3 rounded-md bg-accent text-white font-medium transition-all hover:bg-opacity-90;
+  }
+
+  .lotus-container {
+    @apply container max-w-6xl mx-auto px-4 md:px-6;
+  }
+
+  .lotus-section {
+    @apply py-16 md:py-24;
+  }
+
+  .video-placeholder {
+    @apply w-full aspect-video bg-black/40 border border-white/20 rounded-lg flex items-center justify-center my-8;
+  }
+}
