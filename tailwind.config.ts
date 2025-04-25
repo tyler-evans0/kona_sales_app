@@ -43,14 +43,12 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        lotus: {
-          'dark-purple': 'hsl(var(--lotus-dark-purple))',
-          'teal': 'hsl(var(--lotus-teal))',
-          'blue-gray': 'hsl(var(--lotus-blue-gray))',
-          'blue': 'hsl(var(--lotus-blue))',
-          'slate': 'hsl(var(--lotus-slate))',
-          'light': '#f2f1f1',
-          'dark': '#0e0d14',
+        chart: {
+          '1': 'hsl(var(--chart-1))',
+          '2': 'hsl(var(--chart-2))',
+          '3': 'hsl(var(--chart-3))',
+          '4': 'hsl(var(--chart-4))',
+          '5': 'hsl(var(--chart-5))'
         }
       },
       borderRadius: {
@@ -74,10 +72,6 @@ export default {
         xl: '1280px',
         '2xl': '1536px',
       },
-      },
-      backgroundImage: {
-        'lotus-gradient': 'linear-gradient(to right, #3c5369, #312d3c)',
-        'lotus-hero': 'linear-gradient(rgba(14, 13, 20, 0.6), rgba(14, 13, 20, 0.7)), url("https://ext.same-assets.com/2095582637/2497648387.jpeg")',
       },
     }
   },

@@ -1,19 +1,14 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import ClientBody from "./ClientBody";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-poppins",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kona Sales - Helping College Students Make Bank",
-  description: "Kona helps college students achieve financial freedom and learn the art of sales in a short period of time",
+  title: "Kona Sales - Empowering Students with Sales Skills",
+  description: "Kona Marketing is the premier D2D sales agency for reps to grow their careers and hone their sales and soft skills in the ever-changing market.",
 };
 
 export default function RootLayout({
@@ -22,8 +17,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable}`}>
-      <ClientBody>{children}</ClientBody>
+    <html lang="en">
+      <body className={inter.className}>
+        <Header />
+        <main>
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }
